@@ -23,6 +23,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Sanity Check: Load model
+      - name: Sanity Check
         run: |
           python -c "import pickle; pickle.load(open('model.pkl', 'rb'))"
